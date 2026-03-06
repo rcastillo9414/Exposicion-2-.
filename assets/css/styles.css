@@ -1,89 +1,40 @@
-/* VARIABLES DE COLOR DEL SITIO
-   Se definen una sola vez para usarlas
-   en todo el proyecto. */
-
+/* Variables de color*/
 :root {
-
-  --color-primario: #eff0ef;      
-  /* Color claro principal usado en fondos o detalles */
-
-  --color-secundario: #01401a;    
-  /* Color secundario (verde oscuro) usado en header, footer, etc */
-
-  --color-fondo: #ffffff;         
-  /* Color de fondo general de la página */
-
-  --color-texto: #333333;         
-  /* Color del texto principal para buena legibilidad */
-
-  --color-enlace: #1a73e8;        
-  /* Color normal de los enlaces */
-
-  --color-enlace-hover: #0d47a1;  
-  /* Color que toma el enlace cuando el usuario pasa el mouse */
+  --color-primario: #eff0ef;      /* Color principal */
+  --color-secundario: #01401a;    /* Color secundario */
+  --color-fondo: #ffffff;         /* Fondo general */
+  --color-texto: #333333;         /* Color de texto principal */
+  --color-enlace: #1a73e8;        /* Color de los enlaces */
+  --color-enlace-hover: #0d47a1;  /* Color enlaces al pasar el mouse */
 }
 
-
-/* ESTILO GENERAL DEL BODY */
-
+/* Aplicación de colores*/
 body {
-
   background-color: var(--color-fondo);
-  /* Aplica el color de fondo general usando la variable */
-
   color: var(--color-texto);
-  /* Define el color del texto principal de toda la página */
-
 }
-
-
-/* ESTILO DEL HEADER Y FOOTER */
 
 header, footer {
-
   background-color: var(--color-secundario);
-  /* Aplica fondo verde oscuro al encabezado y pie de página */
-
   color: var(--color-fondo);
-  /* Hace que el texto sea blanco para que contraste con el fondo */
-
 }
-
-
-/* ESTILO DEL NOMBRE / LOGO
-   EN LA BARRA DE NAVEGACIÓN */
 
 header .navbar-brand {
-
   color: var(--color-primario);
-  /* Cambia el color del nombre del sitio dentro del navbar */
-
 }
-
-
-/* ESTILO GENERAL DE LOS ENLACES */
 
 a {
-
   color: var(--color-enlace);
-  /* Aplica color azul a todos los enlaces */
-
   text-decoration: none;
-  /* Elimina el subrayado por defecto */
-
 }
-
-
-/*  EFECTO CUANDO EL MOUSE PASA
-   SOBRE UN ENLACE */
 
 a:hover {
-
   color: var(--color-enlace-hover);
-  /* Cambia el color del enlace al pasar el mouse */
-
   text-decoration: underline;
-  /* Agrega subrayado para indicar interacción */
-
 }
 
+/* Portafolio */
+#portafolio .ratio {
+  background-image: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
+  opacity: 0.15;
+}
